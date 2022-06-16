@@ -85,11 +85,22 @@ def clear():
 
 logo = """
 
-             \033[1;32m███    ██  █████  ██ ███    ███ 
-             \033[1;31m████   ██ ██   ██ ██ ████  ████ 
-             \033[1;33m██ ██  ██ ███████ ██ ██ ████ ██ 
-             \033[1;34m██  ██ ██ ██   ██ ██ ██  ██  ██ 
-             \033[1;37m██   ████ ██   ██ ██ ██      ██ 
+             
+ _______  ______  __      __   ______    ______   __    __ 
+|       \|      \|  \    /  \ /      \  /      \ |  \  |  \
+| $$$$$$$\\$$$$$$ \$$\  /  $$|  $$$$$$\|  $$$$$$\| $$  | $$
+| $$__/ $$ | $$    \$$\/  $$ | $$__| $$| $$___\$$| $$__| $$
+| $$    $$ | $$     \$$  $$  | $$    $$ \$$    \ | $$    $$
+| $$$$$$$  | $$      \$$$$   | $$$$$$$$ _\$$$$$$\| $$$$$$$$
+| $$      _| $$_     | $$    | $$  | $$|  \__| $$| $$  | $$
+| $$     |   $$ \    | $$    | $$  | $$ \$$    $$| $$  | $$
+ \$$      \$$$$$$     \$$     \$$   \$$  \$$$$$$  \$$   \$$
+                                                           
+                                                                                                                      
+
+        
+
+
 
     """
 naim="-2k9=="
@@ -574,13 +585,13 @@ class Main:
 				
 				
 				self.ok.append("%s|%s"%(uid, pw))
-				open("flame-ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("piyash-ok.txt","a").write(" %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
 				print("\r \033[0;92m[SUCCESS] %s √ %s\033[0;97m         "%(uid, pw))
 				
 				self.cp.append("%s|%s"%(uid, pw))
-				open("flame-ok.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("piyash-ok.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
@@ -1007,7 +1018,7 @@ class Main:
 			elif "www.facebook.com" in response.json()["error_msg"]:
 				print("\r \033[0;92m[SUCCESS] %s √ %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
-				open("flame-ok.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("piyash-ok.txt","a").write(" %s | %s\n"%(uid, pw))
 				break
 			else:
 				continue
